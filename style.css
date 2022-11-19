@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    
+    color: #000;
 }
 
 a {
@@ -69,6 +69,7 @@ header ul li a:hover {
     top: 10px;
     cursor: pointer;
     transition: .3s;
+    border-radius: 10%;
 }
 
 .dark-mode-btn:hover {
@@ -82,10 +83,10 @@ header ul li a:hover {
 
 /* header */
 
-/* intro */
+/* hero */
 
-.intro {
-    background: url('./images/wave.svg');
+.hero {
+    
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -93,23 +94,18 @@ header ul li a:hover {
     padding: 20px;
 }
 
-.intro h1 {
+.hero h1 {
     color:rgb(151, 203, 255);
 }
 
-.intro h3 {
+.hero h3 {
     margin-bottom: 20px;
-    color:rgb(212, 178, 245);
+    color:rgb(173, 91, 255);
 }
 
-.intro img {
-    height: 200px;
-    width: 200px;
-    
-}
-
-.intro p {
-    color: #fff;
+.hero img {
+    height: 180px;
+    width: 180px;
 }
 
 .hire-btn {
@@ -119,50 +115,102 @@ header ul li a:hover {
     border-radius: 25px;
 }
 
-.intro .social {
+.hero .social {
     margin-top: 20px;
 }
 
-.intro .social i {
-    color: rgb(234, 208, 255);
+.hero .social i {
+    color: rgb(169, 88, 235);
+    transition: .3s;
 }
 
-.intro .social ul {
+.hero .social i:hover {
+    transform: scale(1.5);
+}
+
+.hero .social ul {
     display: flex;
     justify-content: center;
 }
 
-.intro .social ul li {
+.hero .social ul li {
     margin-left: 20px;
     list-style-type: none;
 }
 
 .image-container {
-    background-color: rgb(204, 179, 146);
-    width: 100px;
-    padding: 20px;
     margin: 10px auto;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-/* intro */
+/* hero */
 
 /* xp */
+
+.xp {
+    text-align: center;
+    padding: 20px;
+}
+
+.xp h3 {
+    padding: 30px;
+}
 
 /* xp */
 
 /* toolbox */
+
+.tools {
+    padding: 20px;
+    text-align: center;
+}
+
+.tools h3 {
+    padding: 30px;
+}
 
 /* toolbox */
 
 /* projects */
+
+.projects {
+    padding: 20px;
+    text-align: center;
+}
+
+.projects h3 {
+    padding: 30px;
+}
 
 /* projects */
 
 /* testimonials */
+
+.testimonials {
+    text-align: center;
+    padding: 20px;                                                                                            
+}
 
 /* testimonials */
 
 /* footer */
+.contact {
+    text-align: center;
+    padding: 20px;
+}
 
+.contact h3 {
+    padding: 30px;
+}
+/* footer */
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+#hora {
+    font-weight: bold;
+}
 /* footer */
