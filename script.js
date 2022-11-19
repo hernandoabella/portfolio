@@ -11,7 +11,6 @@ function myFunction2() {
 setInterval(myFunction2, 1000)
 
 // testimonial slideshow 
-
 let slideIndex = 0;
 showSlides();
 
@@ -29,5 +28,5 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+    setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
