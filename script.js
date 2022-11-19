@@ -1,14 +1,19 @@
 // dark mode btn
 
-let icon = document.querySelector('i.fa-moon')
+let icon = document.querySelector('i.fa-moon-o')
 let btn = document.querySelector('div.dark-mode-btn')
 let body = document.querySelector('body');
-let anchor = document.querySelectorAll('header nav ul li > a');
 
-btn.addEventListener('click', function(x){
-    body.classList.toggle('dark-mode')
-    this.classList.toggle('backgroundBtn')
-})
+
+// icon.addEventListener('click', function(){
+//     body.classList.toggle('dark-mode')
+//     this.classList.toggle('backgroundBtn')
+//     this.classList.toggle('fa-sun-o')
+// })
+
+// function myFunction(x) {
+//     x.classList.toggle('fa-thumbs-down')
+// }
 
 // show datetime
 function myFunction2() {
@@ -18,3 +23,4 @@ function myFunction2() {
 }
 
 setInterval(myFunction2, 1000)
+
