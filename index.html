@@ -6,29 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hernando Abella Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="https://rawcdn.githack.com/hung1001/font-awesome-pro-v6/44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     
     <header>
-        <div class="logo"><h1>Hernando Abella</h1></div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">stuff</a>
-                    <a href="#">stuff</a>
-                    <a href="#">contact</a>
-                    <a href="https://medium.com/@hernandoabella/" target="_blank">blog</a>
-                    <a href="#" class="hire-btn">hire me</a>
-                </li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <div class="logo"><h1>Hernando Abella</h1></div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">stuff</a>
+                        <a href="#projects">work</a>
+                        <a href="#">contact</a>
+                        <a href="https://medium.com/@hernandoabella/" target="_blank">blog</a>
+                        <a href="#contact" class="hire-btn">hire me</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
-        <button onclick="myFunction()">Toggle dark mode</button>
+        <div class="dark-mode-btn"><i class="fa-duotone fa-moon"></i></div>
     </header>
 
     <section class="intro">
-        <div>
+        <div class="image-container">
             <img src="./images/profile.png" alt="profile-image">
         </div>
         <h1>Hernando Abella</h1>
@@ -40,6 +43,7 @@
                 <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                 <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-medium"></i></a></li>
             </ul>
         </div>
     </section>
@@ -54,7 +58,7 @@
         <p>tools and technologies i use to bring your products to life:</p>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
         <h3>A selection of my favorite works 💻</h3>
         <span>html</span>
         <span>css</span>
@@ -69,7 +73,7 @@
         <h3>Nice Things People Have Said</h3>
     </section>
     
-    <section>
+    <section id="contact">
         <h3>contact</h3>
         <p>Dropping a line to say g’day, ask for my resume or see if we can build something amazing together? I’d love to hear from you!</p>
         <p>Fill in your info in the form below and I look forward to hearing from you!</p>
@@ -84,7 +88,8 @@
     </section>
 
     <footer>
-        <p>by ha w love 2022</p>
+        <p>Santa Marta, CO <span id="hora"></span></p>
+        <p>by Hernando Abella</p>
     </footer>
 
     <script src="./script.js"></script>

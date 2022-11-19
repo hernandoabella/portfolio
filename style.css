@@ -4,6 +4,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -18,16 +19,11 @@ a {
 
 h3 {
     font-family: 'Hammersmith One', sans-serif;
-    color:rgb(159, 65, 247);
 }
 
 /* header */
 
 header {
-    background-color:rgb(21, 116, 111);
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding: 10px;
 }
 
@@ -37,7 +33,18 @@ header ul li{
 
 header ul li a{
     margin-left: 20px;
-    color:rgb(151, 203, 255);
+    color:#000;
+    transition: .3s;
+}
+
+header ul li a:hover {
+    color:rgb(21, 116, 111);
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .logo {
@@ -47,7 +54,30 @@ header ul li a{
 
 .dark-mode {
     background: rgb(21, 116, 111);
+    color: #fff;
     transition: all ease .3s;
+}
+
+.dark-mode-btn {
+    background:rgb(21, 116, 111);
+    color: #fff;
+    width: 40px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.dark-mode-btn:hover {
+    border-radius: 100%;
+}
+
+.backgroundBtn {
+    background: #fff;
+    color:rgb(21, 116, 111);
 }
 
 /* header */
@@ -55,10 +85,10 @@ header ul li a{
 /* intro */
 
 .intro {
-    background-image: url("https://source.unsplash.com/random/2000x2000");
+    background: url('./images/wave.svg');
     background-repeat: no-repeat;
-    width: 100%;
     background-size: cover;
+    width: 100%;
     text-align: center;
     padding: 20px;
 }
@@ -67,13 +97,15 @@ header ul li a{
     color:rgb(151, 203, 255);
 }
 
+.intro h3 {
+    margin-bottom: 20px;
+    color:rgb(212, 178, 245);
+}
+
 .intro img {
     height: 200px;
     width: 200px;
-}
-
-.intro h3 {
-    margin-bottom: 20px;
+    
 }
 
 .intro p {
@@ -92,7 +124,7 @@ header ul li a{
 }
 
 .intro .social i {
-    color: rgb(218, 175, 253);
+    color: rgb(234, 208, 255);
 }
 
 .intro .social ul {
@@ -105,5 +137,32 @@ header ul li a{
     list-style-type: none;
 }
 
+.image-container {
+    background-color: rgb(204, 179, 146);
+    width: 100px;
+    padding: 20px;
+    margin: 10px auto;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
 /* intro */
 
+/* xp */
+
+/* xp */
+
+/* toolbox */
+
+/* toolbox */
+
+/* projects */
+
+/* projects */
+
+/* testimonials */
+
+/* testimonials */
+
+/* footer */
+
+/* footer */
