@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="https://rawcdn.githack.com/hung1001/font-awesome-pro-v6/44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+
+</script>
+
 </head>
 <body>
 
@@ -22,11 +25,15 @@
                     <li><a href="#projects">work</a></li>
                     <li><a href="#">contact</a></li>   
                     <li><a href="https://medium.com/@hernandoabella/" target="_blank">blog</a></li>
-                    <li><a href="#contact" class="hire-btn">hire me</a></li>
+                    <li>
+                        <label class="switch" onclick="darkMode()">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </li>
                 </ul>
             </nav>
         </div>
-
         
     </header>
 
@@ -40,7 +47,7 @@
         </div>
         <h1>Hernando Abella</h1>
         <h3>Full-Stack Engineer 👨‍💻</h3>
-        <p>Senior Full stack engineer in search of the right path to develop the best solutions on the road to corporate success with the best in the industry.</p>
+        <p>Full stack engineer in search of the right path to develop the best solutions on the road to corporate success with the best in the industry.</p>
         <div class="social">
             <ul>
                 <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
@@ -63,8 +70,28 @@
         <div class="wrapper">
             <div class="left">
                 <h2>Full Stack Developer</h2>
+                <p>September 2020–October 2022</p>
+                <p>Smart Design Development</p>
+            </div>
+            
+            <div class="right">
+                <ul>
+                    <li>Led architecture, design, and development of 30+ new features.</li>
+                    <li>Presented and conveyed ideas and designs with 4+ technical teams and 12+ business partners.</li>
+                    <li>Developed 40+ applications following Agile product development methodologies.</li>
+                    <li>Oversaw the development and maintenance of new products, technical documentation and workflows.</li>
+                    <li>Designed, built and automated data flows to save 10+ hours of tedious work per week.</li>
+                </ul>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="wrapper">
+            <div class="left">
+                <h2>Full Stack Developer</h2>
                 <p>May 2016–June 2019</p>
-                <p>General Gaming, Boston, MA</p>
+                <p>General Gaming</p>
             </div>
             
             <div class="right">
@@ -83,7 +110,7 @@
             <div class="left">
                 <h2>Junior Full Stack Developer</h2>
                 <p>December 2012–April 2016</p>
-                <p>Crazy Lazy Apps, Los Angeles, CA</p>
+                <p>Crazy Lazy Apps</p>
             </div>
             
             <div class="right">
@@ -128,26 +155,31 @@
     <section class="projects" id="projects">
         <h3>A Selection Of My Favorite Works 💻</h3>
         
-        <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'London')">London</button>
-            <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
-            <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
-        </div>
-        
-        <div id="London" class="tabcontent">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+        <div class="tab-container">
+            <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">London</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">Paris</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Tokyo</button>
+            </div>
+    
+            <div id="London" class="tabcontent">
+                <h3>Hoobank</h3>
+                <p>London is the capital city of England.</p>
+                <a href="./"><img src="./images/hoobank.png" alt=""></a>
+                
+            </div>
+    
+            <div id="Paris" class="tabcontent">
+                <h3>Paris</h3>
+                <p>Paris is the capital of France.</p> 
+            </div>
+    
+            <div id="Tokyo" class="tabcontent">
+                <h3>Tokyo</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
         </div>
 
-        <div id="Paris" class="tabcontent">
-            <h3>Paris</h3>
-            <p>Paris is the capital of France.</p>
-        </div>
-
-        <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
-        </div>
 
     </section>
 
@@ -200,14 +232,14 @@
         <h3>Contact 📴</h3>
         <p>Dropping a line to say hello, ask for my resume or see if we can build something amazing together? I’d love to hear from you!</p>
         <br>
-        <!-- <p>Fill in your info in the form below and I look forward to hearing from you!</p>
-        <br> -->
-        <p><em>hernandoabella@gmail.com</em></p>
-        <!-- <form action="#">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="Email">
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button>send email</button>
+        <p>Fill in your info in the form below and I look forward to hearing from you!</p>
+        <br>
+        <!-- <form method="post">
+            <input type="text" id="name" placeholder="name">
+            <input type="email" id="email" placeholder="email">
+            <input type="text" id="phone" placeholder="phone">
+            <textarea id="message" rows="4"></textarea>
+            <input type="button" value="Send Email" onclick="sendEmail()" />
         </form> -->
     
     </section>
@@ -223,8 +255,11 @@
 
     <!-- footer -->
 
-    <script src="./script.js"></script>
+    <!-- scripts -->
     
+    <script src="./script.js"></script>
+
+    <!-- scripts -->
 </body>
 </html>
 
