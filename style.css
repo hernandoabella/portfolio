@@ -286,7 +286,6 @@ header ul li a{
 .tab {
     background-color: #dadada;
     width: 30%;
-    border-radius: 25px 0px 0px 25px;
 }
 
   /* Style the buttons inside the tab */
@@ -302,10 +301,6 @@ header ul li a{
     cursor: pointer;
     transition: 0.3s;
     font-size: 17px;
-}
-
-.tab button:nth-child(1){
-    border-radius: 25px 0px 0px 0px;
 }
 
 /* Change background color of buttons on hover */
@@ -324,7 +319,6 @@ header ul li a{
 .tabcontent {
     padding: 0px 12px;
     width: 70%;
-    border-radius: 0px 25px 20px 0px;
     background: var(--black);
 }
 
@@ -443,6 +437,7 @@ footer {
     padding: 20px;
     background: var(--black);
     color: var(--white);
+    font-family: 'Hammersmith One', sans-serif;
 }
 
 footer a {
@@ -450,7 +445,6 @@ footer a {
 }
 
 #hora {
-    font-weight: bold;
     margin-left: 20px;
 }
 /* footer */
