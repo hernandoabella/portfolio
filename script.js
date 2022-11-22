@@ -1,13 +1,3 @@
-// set default colors
-
-document.body.style.background = "white";
-document.body.style.color = "black";
-
-let a = document.querySelectorAll("li a");
-    for(let i = 0; i < a.length; i++){
-        a[i].style.color = "green";
-}
-
 // generate random dark color
 
 function randDarkColor() {
@@ -26,6 +16,28 @@ function randDarkColor() {
     
     
     document.body.style.background = rgb;
+    
+}
+
+function randDarkColor2() {
+    let lum = -0.25;
+    let hex = String('#' + Math.random().toString(16).slice(2, 8).toUpperCase()).replace(/[^0-9a-f]/gi, '');
+    if (hex.length < 6) {
+        hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+    }
+    let rgb = "#",
+        c, i;
+    for (i = 0; i < 3; i++) {
+        c = parseInt(hex.substr(i * 2, 2), 16);
+        c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+        rgb += ("00" + c).substr(c.length);
+    }
+    
+    let tabContent = document.querySelector(".tabcontent");
+    for(let i = 0; i < tabContent.length; i++){
+        tabContent[i].style.background = rgb;
+    }
+    
 }
 
 // generate light color
@@ -42,6 +54,9 @@ function generateLightColorHex() {
     for(var i = 0; i < a.length; i++){
         a[i].style.color = color;
     }
+
+    document.querySelector('.tab').style.background = color;
+    
     
 }
 
@@ -49,6 +64,7 @@ function generateLightColorHex() {
 function darkMode(x) {
     generateLightColorHex()
     randDarkColor()
+    randDarkColor2()
     
     document.body.classList.toggle('dark-mode');
     
@@ -69,23 +85,7 @@ function getTime() {
     s = s < 10 ? "0" + s : s;
     var strTime = h + ":" + m + ":" + s + " " + meridian;
     document.getElementById('hora').innerText = strTime;
-    setTimeout(startTime, 1000);
-    
 }
-
-// const getTimeAMPMFormat = (date) => {
-//     let hours = date.getHours();
-//     let minutes = date.getMinutes();
-//     const ampm = hours >= 12 ? 'PM' : 'AM';
-//     hours = hours % 12;
-//     hours = hours ? hours : 12; // the hour '0' should be '12'
-//     hours = hours < 10 ? '0' + hours : hours;
-//     // appending zero in the start if hours less than 10
-//     minutes = minutes < 10 ? '0' + minutes : minutes;
-//     document.getElementById('hora') = hours + ':' + minutes + ' ' + ampm;
-
-//     getTimeAMPMFormat(new Date())
-// };
 
 setInterval(getTime, 1000)
 
