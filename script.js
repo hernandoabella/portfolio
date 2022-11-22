@@ -14,7 +14,6 @@ function randDarkColor() {
         rgb += ("00" + c).substr(c.length);
     }
     
-    
     document.body.style.background = rgb;
     
 }
@@ -50,12 +49,19 @@ function generateLightColorHex() {
 
     document.body.style.color = color;
     
-    var a = document.querySelectorAll("li a");
-    for(var i = 0; i < a.length; i++){
+    let a = document.querySelectorAll("li a");
+    for(let i = 0; i < a.length; i++){
         a[i].style.color = color;
     }
 
     document.querySelector('.tab').style.background = color;
+
+    
+
+    let dot = document.querySelector(".dot");
+    for(let i = 0; i < dot.length; i++){
+        dot[i].style.background = color;
+    }
     
     
 }
