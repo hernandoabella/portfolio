@@ -1,4 +1,3 @@
-
 // generate random dark color
 function randDarkColor() {
     let lum = -0.25;
@@ -14,7 +13,7 @@ function randDarkColor() {
         rgb += ("00" + c).substr(c.length);
     }
     
-
+    
     document.body.style.background = rgb;
 }
 
@@ -24,7 +23,14 @@ function generateLightColorHex() {
     let color = "#";
     for (let i = 0; i < 3; i++)
       color += ("0" + Math.floor(((1 + Math.random()) * Math.pow(16, 2)) / 2).toString(16)).slice(-2);
+    
     document.body.style.color = color;
+    
+    var a = document.querySelectorAll("li a");
+    for(var i = 0; i < a.length; i++){
+        a[i].style.color = color;
+    }
+    
 }
 
 

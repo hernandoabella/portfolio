@@ -30,16 +30,10 @@ h3 {
     font-size: 2em;
 }
 
-hr {
-    margin: 20px auto;
-    border: 3px dashed #000;
-    width: 100px;
-}
-
 /* header */
 
 header {
-    padding: 10px;
+    padding: 30px;
 }
 
 header ul {
@@ -106,19 +100,11 @@ header ul li a{
     width: 180px;
 }
 
-.hire-btn {
-    background-color:rgb(151, 203, 255);
-    color: #000;
-    padding: 10px;
-    border-radius: 25px;
-}
-
 .hero .social {
     margin-top: 20px;
 }
 
 .hero .social i {
-    color: rgb(169, 88, 235);
     transition: .3s;
 }
 
@@ -218,6 +204,8 @@ header ul li a{
 
 .tab-container {
     display: flex;
+    width: 600px;
+    margin: auto;
 }
 
 .tab {
@@ -337,7 +325,7 @@ header ul li a{
 
 /* testimonials */
 
-/* footer */
+/* contact */
 .contact {
     text-align: center;
     padding: 20px;
@@ -346,7 +334,7 @@ header ul li a{
 .contact h3 {
     padding: 30px;
 }
-/* footer */
+/* contact */
 
 /* footer */
 footer {
