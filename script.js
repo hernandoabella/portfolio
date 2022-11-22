@@ -1,4 +1,15 @@
+// set default colors
+
+document.body.style.background = "white";
+document.body.style.color = "black";
+
+let a = document.querySelectorAll("li a");
+    for(let i = 0; i < a.length; i++){
+        a[i].style.color = "green";
+}
+
 // generate random dark color
+
 function randDarkColor() {
     let lum = -0.25;
     let hex = String('#' + Math.random().toString(16).slice(2, 8).toUpperCase()).replace(/[^0-9a-f]/gi, '');
@@ -21,9 +32,10 @@ function randDarkColor() {
 
 function generateLightColorHex() {
     let color = "#";
-    for (let i = 0; i < 3; i++)
-      color += ("0" + Math.floor(((1 + Math.random()) * Math.pow(16, 2)) / 2).toString(16)).slice(-2);
-    
+    for (let i = 0; i < 3; i++){
+        color += ("0" + Math.floor(((1 + Math.random()) * Math.pow(16, 2)) / 2).toString(16)).slice(-2);
+    }
+
     document.body.style.color = color;
     
     var a = document.querySelectorAll("li a");
@@ -33,12 +45,8 @@ function generateLightColorHex() {
     
 }
 
-
-
 // dark mode btn
 function darkMode(x) {
-    // let body = document.getElementById('body');
-    // body.classList.toggle('dark-mode');
     generateLightColorHex()
     randDarkColor()
     
@@ -48,14 +56,38 @@ function darkMode(x) {
 }
 
 
-// show datetime
-function myFunction2() {
-    var date = new Date()
-    var current_time = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
-    document.getElementById('hora').innerHTML = current_time; 
+// show hour
+function getTime() {
+    const today = new Date();
+    let h = today.getHours();
+    let m = today.getMinutes();
+    let s = today.getSeconds();
+    var meridian = h >= 12 ? "PM" : "AM";
+    h = h % 12;
+    h = h ? h : 12;
+    m = m < 10 ? "0" + m : m;
+    s = s < 10 ? "0" + s : s;
+    var strTime = h + ":" + m + ":" + s + " " + meridian;
+    document.getElementById('hora').innerText = strTime;
+    setTimeout(startTime, 1000);
+    
 }
 
-setInterval(myFunction2, 1000)
+// const getTimeAMPMFormat = (date) => {
+//     let hours = date.getHours();
+//     let minutes = date.getMinutes();
+//     const ampm = hours >= 12 ? 'PM' : 'AM';
+//     hours = hours % 12;
+//     hours = hours ? hours : 12; // the hour '0' should be '12'
+//     hours = hours < 10 ? '0' + hours : hours;
+//     // appending zero in the start if hours less than 10
+//     minutes = minutes < 10 ? '0' + minutes : minutes;
+//     document.getElementById('hora') = hours + ':' + minutes + ' ' + ampm;
+
+//     getTimeAMPMFormat(new Date())
+// };
+
+setInterval(getTime, 1000)
 
 // testimonial slideshow 
 let slideIndex = 0;

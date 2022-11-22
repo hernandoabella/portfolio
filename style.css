@@ -204,7 +204,7 @@ header ul li a{
 
 .tab-container {
     display: flex;
-    width: 600px;
+    width: 800px;
     margin: auto;
 }
 
@@ -246,12 +246,17 @@ header ul li a{
     padding: 0px 12px;
     border: 1px solid #ccc;
     width: 70%;
-    border-left: none;
 }
 
 .tabcontent img {
     width: 300px;
     border-radius: 25px;
+    margin: 10% auto;
+    transition: .3s;
+}
+
+.tabcontent img:hover {
+    transform: scale(1.4);
 }
 
 /* projects */
