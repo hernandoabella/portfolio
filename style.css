@@ -119,6 +119,7 @@ h3 {
 
 header {
     padding: 30px;
+    
 }
 
 header ul {
@@ -136,11 +137,12 @@ header ul li a{
     text-decoration: none;
 }
 
-.wrapper {
+nav {
     display: flex;
-    align-items: center;
     justify-content: space-around;
 }
+
+
 
 .logo {
     font-size: 1em;
@@ -159,10 +161,27 @@ header ul li a{
     transform: scale(2);
 }
 
+.burger-menu {
+    display: none;
+    background: red;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
 @media only screen and (max-width: 768px) {
     
 
-    
+    header ul{
+        flex-direction: column;
+    }
+
+    .burger-menu {
+        display: block;
+    }
 }
 
 /* header */
@@ -235,6 +254,12 @@ header ul li a{
 /* hero */
 
 /* xp */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .xp {
     padding: 20px;
@@ -454,12 +479,46 @@ header ul li a{
     50% {
         opacity: .5;
         border-radius: 50%;
-        transform: scale(2) rotate(100deg);
+        transform: scale(3) rotate(180deg);
     }
 }
 
 @media only screen and (max-width : 768px) {
+    .testimonials img {
+        width: 100%;
+        transition: .3s;
+        box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    }
+
+    .flexSlide {
+        flex-direction: column;
+    }
+
+    .flexSlide p {
+        text-align: justify;
+    }
+
+    .testimonial-text::before, .testimonial-text::after {
+        font-size: 2em;
+    }
+
+    .testimonial-text::before {
+        content: '"';
+    }
+
+    .testimonial-text::after {
+        content: '"';
+    }
+
+    .rightContent{
+        padding: 0px;
+        padding: 10px;
+        border-radius: 100%;
+    }
     
+    .leftContent {
+        padding: 0px;
+    }
 }
 
 /* testimonials */
@@ -477,11 +536,12 @@ header ul li a{
 }
 
 form {
-    width: 500px;
+    width: 450px;
     margin: auto;
     background: var(--bg-theme);
     padding: 20px;
     border-radius: 25px;
+    transition: .3s;
 }
 
 form input, form textarea, form button {
@@ -535,10 +595,6 @@ form button:hover {
         text-align: left;
     }
 
-    form {
-        width: 100%;
-    }
-
     .formRight {
         width: 100%;
         padding: 0px;
@@ -546,6 +602,12 @@ form button:hover {
 
     .formLeft {
         display: none;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    form {
+        width: 100%;
     }
 }
 

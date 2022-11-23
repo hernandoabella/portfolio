@@ -15,7 +15,7 @@ function randDarkColor() {
     }
     
     document.body.style.background = rgb;
-    
+    document.querySelector('form').style.background = rgb;
 }
 
 function randDarkColor2() {
@@ -31,6 +31,8 @@ function randDarkColor2() {
         c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
         rgb += ("00" + c).substr(c.length);
     }
+
+    
     
 }
 
@@ -50,14 +52,6 @@ function generateLightColorHex() {
     }
 
 
-    let dot = document.querySelector('.dot');
-    for(let i; i < dot.length; i++) {
-        dot[i].style.backgroundColor = color;
-    }
-
-    console.log(color)
-    
-    
 }
 
 // dark mode btn
@@ -65,12 +59,7 @@ function darkMode(x) {
     generateLightColorHex()
     randDarkColor()
     randDarkColor2()
-    // let darkMode = document.querySelector('.dark-mode').style.background = "red";
-    // document.body.style.background = darkMode;
-    let dm = document.querySelector('.dark-mode').style.background = "red";
-
     document.body.classList.toggle('dark-mode');
-    
     x.classList.toggle("fa-moon");
 }
 
@@ -97,6 +86,10 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
+
+    // background: var(--black);
+    // transition: .3s;
+    // animation: animation1 1s;
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
@@ -110,7 +103,10 @@ function showSlides() {
     }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 10000); // Change image every 10 seconds
+    // dots[slideIndex-1].style.background = "blue";
+    
+    setTimeout(showSlides, 5000); // Change image every 10 seconds
+
 }
 
 // typing effect
@@ -118,7 +114,7 @@ function showSlides() {
 const typedTextSpan = document.querySelector('.typed-text');
 const cursorSpan = document.querySelector('.cursor');
 
-const textArray = ['Full-Stack Engineer', 'UI/UX Designer', 'Youtuber'];
+const textArray = ['Full-Stack Engineer', 'UI/UX Designer', 'Artist'];
 const typingDelay = 150;
 const erasingDelay = 90;
 const newTextDelay = 2000;
