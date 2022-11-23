@@ -32,11 +32,6 @@ function randDarkColor2() {
         rgb += ("00" + c).substr(c.length);
     }
     
-    let tabContent = document.querySelector(".tabcontent");
-    for(let i = 0; i < tabContent.length; i++){
-        tabContent[i].style.background = rgb;
-    }
-    
 }
 
 // generate light color
@@ -54,7 +49,6 @@ function generateLightColorHex() {
         a[i].style.color = color;
     }
 
-    document.querySelector('.tab').style.background = color;
 
     let dot = document.querySelector('.dot');
     for(let i; i < dot.length; i++) {
@@ -118,26 +112,6 @@ function showSlides() {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 10000); // Change image every 10 seconds
 }
-
-// project section
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" activo", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " activo";
-}
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-
-
 
 // typing effect
 
