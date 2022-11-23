@@ -56,12 +56,12 @@ function generateLightColorHex() {
 
     document.querySelector('.tab').style.background = color;
 
-    
-
-    let dot = document.querySelector(".dot");
-    for(let i = 0; i < dot.length; i++){
-        dot[i].style.background = color;
+    let dot = document.querySelector('.dot');
+    for(let i; i < dot.length; i++) {
+        dot[i].style.backgroundColor = color;
     }
+
+    console.log(color)
     
     
 }
@@ -71,7 +71,10 @@ function darkMode(x) {
     generateLightColorHex()
     randDarkColor()
     randDarkColor2()
-    
+    // let darkMode = document.querySelector('.dark-mode').style.background = "red";
+    // document.body.style.background = darkMode;
+    let dm = document.querySelector('.dark-mode').style.background = "red";
+
     document.body.classList.toggle('dark-mode');
     
     x.classList.toggle("fa-moon");

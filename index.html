@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="https://rawcdn.githack.com/hung1001/font-awesome-pro-v6/44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
-
 </script>
 
 </head>
@@ -252,14 +251,24 @@
         <p>Dropping a line to say hello, ask for my resume or see if we can build something amazing together? I’d love to hear from you!</p>
         <br>
         <p>Fill in your info in the form below and I look forward to hearing from you!</p>
-        <br>
-        <!-- <form method="post">
-            <input type="text" id="name" placeholder="name">
-            <input type="email" id="email" placeholder="email">
-            <input type="text" id="phone" placeholder="phone">
-            <textarea id="message" rows="4"></textarea>
-            <input type="button" value="Send Email" onclick="sendEmail()" />
-        </form> -->
+        <br><br>
+        
+        <div class="formFlex">
+            <div class="formRight">
+                <form action="https://formsubmit.co/02cc4f5f1bcfd72b530c40c623aaca13" method="POST">
+                    <input type="text" name="name" placeholder="Full Name"><br><br>
+                    <input type="email" name="email" placeholder="E-mail"><br><br>
+                    <input type="phone" name="phone" placeholder="Phone Number"><br><br>
+                    <textarea name="message" id="message" rows="10" placeholder="Write your message"></textarea><br><br>
+                    <button type="submit">Send <i class="fa fa-paper-plane"></i></button>
+                </form>
+            </div>
+            <div class="formLeft">
+                <img src="./images/contact.jpg" alt="contact">
+            </div>
+        </div>
+        
+        
     
     </section>
 
@@ -275,7 +284,6 @@
     <!-- footer -->
 
     <!-- scripts -->
-    
     <script src="./script.js"></script>
 
     <!-- scripts -->
