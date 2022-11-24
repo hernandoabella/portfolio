@@ -5,7 +5,6 @@ function toggleMenu(x) {
 }
 
 // generate random dark color
-
 function randDarkColor() {
     let lum = -0.25;
     let hex = String('#' + Math.random().toString(16).slice(2, 8).toUpperCase()).replace(/[^0-9a-f]/gi, '');
@@ -37,9 +36,6 @@ function randDarkColor2() {
         c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
         rgb += ("00" + c).substr(c.length);
     }
-
-    
-    
 }
 
 // generate light color
@@ -51,13 +47,23 @@ function generateLightColorHex() {
     }
 
     document.body.style.color = color;
+    document.querySelector('h1').style.color = color;
     
     let a = document.querySelectorAll("li a");
     for(let i = 0; i < a.length; i++){
         a[i].style.color = color;
     }
 
+}
 
+// set default colors
+document.body.style.background = "#fff";
+document.body.style.color = "black";
+
+let a = document.querySelectorAll('li a');
+
+for(let i = 0; i < a; i++) {
+    a[i].style.color = "green";
 }
 
 // dark mode btn
@@ -68,6 +74,36 @@ function darkMode(x) {
     document.body.classList.toggle('dark-mode');
     x.classList.toggle("fa-moon");
 }
+
+// default mode btn
+var defaultState = false;
+
+function defaultMode() {
+    if(!defaultState) {
+        document.body.style.background = "#99C24D";
+        document.body.style.color = "#3E4147";
+        let a = document.querySelectorAll("li a");
+
+        for(let i = 0; i < a.length; i++) {
+            a[i].style.color = "#3E4147";
+        }
+
+        document.querySelector('h1').style.color = "#3E4147";
+
+        defaultState = true;
+    } else {
+        defaultState = false;
+    }
+}
+
+function clickHandler() {
+    defaultMode();
+    let mybtn = document.querySelector('.my-btn');
+
+    mybtn.addEventListener('click', defaultMode);
+}
+
+onload = () => clickHandler();
 
 
 // show hour
