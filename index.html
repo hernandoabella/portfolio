@@ -17,17 +17,20 @@
     <!-- header -->
     
     <header>
-        <div class="wrapper">
-            <nav>
-                <div class="logo"><h1>Hernando Abella</h1></div>
-                <ul>
-                    <li><a href="#projects" class="effect-shine">work</a></li>
-                    <li><a href="#" class="effect-shine">contact</a></li>   
-                    <li><a href="https://medium.com/@hernandoabella/" target="_blank" class="effect-shine">blog</a></li>
-                    <li><i onclick="darkMode(this)" class="fa-duotone fa-sun darkBtn" class="effect-shine"></i></li>
-                </ul>
-                <div class="burger-menu"></div>
-            </nav>
+        <nav>
+            <div class="logo"><h1>Hernando Abella</h1></div>
+            <ul>
+                <li><a href="#projects" class="effect-shine">work</a></li>
+                <li><a href="#" class="effect-shine">contact</a></li>   
+                <li><a href="https://medium.com/@hernandoabella/" target="_blank" class="effect-shine">blog</a></li>
+                <li><i onclick="darkMode(this)" class="fa-duotone fa-sun darkBtn" class="effect-shine"></i></li>
+            </ul>
+        </nav>    
+        
+        <div class="burger-menu" onclick="toggleMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
     </header>
 
@@ -66,8 +69,10 @@
         <div class="wrapper">
             <div class="left">
                 <h2>Full Stack Developer</h2>
-                <p>September 2020–October 2022</p>
-                <p>Smart Design Development</p>
+                <div class="position-info">
+                    <p>September 2020–October 2022</p>
+                    <p>Smart Design Development</p>
+                </div>
             </div>
             
             <div class="right">
@@ -86,8 +91,10 @@
         <div class="wrapper">
             <div class="left">
                 <h2>Full Stack Developer</h2>
-                <p>May 2016–June 2019</p>
-                <p>General Gaming</p>
+                <div class="position-info">
+                    <p>May 2016–June 2019</p>
+                    <p>General Gaming</p>
+                </div>
             </div>
             
             <div class="right">
@@ -105,8 +112,10 @@
         <div class="wrapper">
             <div class="left">
                 <h2>Junior Full Stack Developer</h2>
-                <p>December 2012–April 2016</p>
-                <p>Crazy Lazy Apps</p>
+                <div class="position-info">
+                    <p>December 2012–April 2016</p>
+                    <p>Crazy Lazy Apps</p>
+                </div>
             </div>
             
             <div class="right">
@@ -170,7 +179,7 @@
                     <div class="leftContent">
                         <h2>Jade</h2>
                         <p><b>- <em>Gestor de Proyectos</em></b></p><br>
-                        <p class="testimonial-text">We couldn't have made a better decision. Hernando has a great human team: competent, responsible and committed. The results show the quality and experience of his work.</p>
+                        <p><i class="fad fa-quote-left"></i>We couldn't have made a better decision. Hernando has a great human team: competent, responsible and committed. The results show the quality and experience of his work.<i class="fad fa-quote-right"></i></p>
                     </div>
                 </div>
             </div>
@@ -183,7 +192,7 @@
                     <div class="leftContent">
                         <h2>Alex</h2>
                         <p><b>- <em>Web Developer</em></b></p><br>
-                        <p class="testimonial-text">One of the things that I highlight the most is the versatility it has to be able to capture what the client really needs and what the client wants to project and make known on their digital pages. He is a person who really works for you with love, dedication, commitment and responsibility, there is never no for an answer.</p>
+                        <p><i class="fad fa-quote-left"></i>One of the things that I highlight the most is the versatility it has to be able to capture what the client really needs and what the client wants to project and make known on their digital pages. He is a person who really works for you with love, dedication, commitment and responsibility, there is never no for an answer.<i class="fad fa-quote-right"></i></p>
                     </div>
                 </div>
             </div>
@@ -196,7 +205,7 @@
                     <div class="leftContent">
                         <h2>Brayan</h2>
                         <p><b>- <em>Software Engineer</em></b></p><br>
-                        <p class="testimonial-text">He is an empathetic person who cares deeply about the results of his clients and always gives an incredible service. I recommend it 100% to every person who needs digital services.</p>
+                        <p><i class="fad fa-quote-left"></i>He is an empathetic person who cares deeply about the results of his clients and always gives an incredible service. I recommend it 100% to every person who needs digital services.<i class="fad fa-quote-right"></i></p>
                     </div>
                 </div>
             </div>
@@ -224,8 +233,8 @@
         <p>Fill in your info in the form below and I look forward to hearing from you!</p>
         <br><br>
         
-        <div class="formFlex">
-            <div class="formRight">
+        <div>
+            <div>
                 <form action="https://formsubmit.co/02cc4f5f1bcfd72b530c40c623aaca13" method="POST">
                     <input type="text" name="name" placeholder="Full Name"><br><br>
                     <input type="email" name="email" placeholder="E-mail"><br><br>
@@ -233,9 +242,6 @@
                     <textarea name="message" id="message" rows="10" placeholder="Write your message"></textarea><br><br>
                     <button type="submit">Send <i class="fa fa-paper-plane"></i></button>
                 </form>
-            </div>
-            <div class="formLeft">
-                <img src="./images/contact.jpg" alt="contact">
             </div>
         </div>
         

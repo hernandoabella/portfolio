@@ -1,3 +1,9 @@
+// hamburger menu toggler
+function toggleMenu(x) {
+    x.classList.toggle('change');
+    document.querySelector('nav').classList.toggle('changeNav');
+}
+
 // generate random dark color
 
 function randDarkColor() {
