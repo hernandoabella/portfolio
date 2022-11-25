@@ -4,6 +4,8 @@ function toggleMenu(x) {
     document.querySelector('nav').classList.toggle('changeNav');
 }
 
+(innerWidth < 768) ? document.body.style.background = "red" : ""
+
 // generate random dark color
 function randDarkColor() {
     let lum = -0.25;
@@ -20,7 +22,7 @@ function randDarkColor() {
     }
     
     document.body.style.background = rgb;
-    document.querySelector('form').style.background = rgb;
+    
 }
 
 function randDarkColor2() {
@@ -36,6 +38,8 @@ function randDarkColor2() {
         c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
         rgb += ("00" + c).substr(c.length);
     }
+
+    document.querySelector('form').style.background = rgb;
 }
 
 // generate light color
@@ -87,6 +91,8 @@ function defaultMode() {
         for(let i = 0; i < a.length; i++) {
             a[i].style.color = "#3E4147";
         }
+
+        document.querySelector('form').style.background = "#99C24D";
 
         document.querySelector('h1').style.color = "#3E4147";
 

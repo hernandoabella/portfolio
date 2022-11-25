@@ -263,6 +263,8 @@ nav {
 .hero img {
     height: 180px;
     width: 180px;
+    border-radius: 100%;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
 .hero .social {
@@ -420,69 +422,7 @@ nav {
     color: var(--white);
 }
 
-/* Style the tab */
 
-.tab-container {
-    display: flex;
-    width: 900px;
-    height: 450px;
-    margin: 30px auto;
-}
-
-.tab {
-    background-color: #dadada;
-    width: 30%;
-}
-
-  /* Style the buttons inside the tab */
-.tab button {
-    display: block;
-    background-color: inherit;
-    color: black;
-    padding: 22px 16px;
-    width: 100%;
-    border: none;
-    outline: none;
-    text-align: left;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: var(--black);
-    color: #fff;
-}
-
-/* Create an active/current "tab button" class */
-.tab button.activo {
-    background-color: var(--black);
-    color: #fff;
-}
-
-  /* Style the tab content */
-.tabcontent {
-    padding: 0px 12px;
-    
-    background: var(--black);
-    border: 1px solid pink;
-    border-left: none;
-    border-radius: 0px 25px 25px 0px;
-}
-
-.tabcontent img {
-    width: 300px;
-    border-radius: 25px;
-    margin: 50% auto;
-    transition: .3s;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    transform: scale(1.3);
-}
-
-.tabcontent img:hover {
-    transform: scale(1.5);
-}
 
 @media only screen and (max-width : 768px) {
     
