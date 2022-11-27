@@ -224,10 +224,6 @@ nav {
         margin: 20px;
     }
 
-    nav a {
-        color: var(--white);
-    }
-
     nav ul li {
         margin: 20px;
         text-align: center;
@@ -450,7 +446,6 @@ nav {
     border-radius: 25px;
 }
 
-
 @media only screen and (max-width : 768px) {
     .cards-container {
         flex-direction: column;
@@ -471,6 +466,10 @@ nav {
 
     .card:hover {
         transform: scale(1);
+    }
+
+    .card img {
+        height: auto;
     }
 }
 
