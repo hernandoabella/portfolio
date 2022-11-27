@@ -424,8 +424,7 @@ nav {
 }
 
 .project-container {
-    margin: auto;
-    padding: 30px;
+    margin: auto 50px;
     width: 900px;
 }
 
@@ -434,34 +433,20 @@ nav {
     justify-content: space-evenly;
 }
 
-.card {
-    cursor: pointer;
-    transition: .3s;
-    line-height: 0;
-    width: 300px;
-    padding: 20px;
-}
-
-.card:hover {
-    transform: scale(1.1);
-    z-index: 9999;
-}
-
-.card img {
-    width: 100%;
-    height: 180px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    transition: .3s;
-    border-radius: 25px;
-}
-
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
     width: 300px;
     height: 200px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.flip-card img {
+    width: 100%;
+    height: 200px;
 }
 
   /* This container is needed to position the front and back side */
@@ -476,7 +461,7 @@ nav {
 
   /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) scale(1.1);
 }
 
   /* Position the front and back side */
@@ -514,13 +499,13 @@ nav {
         flex-direction: column;
     }
 
-    .card {
-        width: 100%;
+    .flip-card {
+        width: 300px;
         padding: 10px;
         cursor: pointer;
         transition: .3s;
-        margin: 20px 0px;
         padding: 10px;
+        margin: 20px auto;
     }
 
     .card:hover {
@@ -533,7 +518,18 @@ nav {
         width: 100%;
     }
 
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg) scale(1);
+    }
+
     
+}
+
+@media only screen and (max-width: 450px) {
+    .flip-card {
+        margin: 20px 0px;
+        width: 100%;
+    }
 }
 
 /* projects */
