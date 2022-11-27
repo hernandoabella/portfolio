@@ -68,13 +68,11 @@ function defaultMode() {
         document.body.style.color = "#3E4147";
         let a = document.querySelectorAll("li a");
 
-        for(let i = 0; i < a.length; i++) {
-            a[i].style.color = "#3E4147";
-        }
+        // for(let i = 0; i < a.length; i++) {
+        //     a[i].style.color = "#3E4147";
+        // }
 
-        document.querySelector('form').style.background = "#99C24D";
-
-        document.querySelector('h1').style.color = "#3E4147";
+        // document.querySelector('h1').style.color = "#3E4147";
 
         defaultState = true;
     } else {
