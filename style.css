@@ -179,7 +179,7 @@ nav {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: var(--black);
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -202,8 +202,8 @@ nav {
 
     nav {
         flex-direction: column;
-        background: var(--black);
-        color: var(--white);
+        background: var(--bg-theme);
+        color: var(--black);
         padding: 20px;
         width: 100%;
         height: 100vh;
@@ -211,7 +211,6 @@ nav {
         right: 0px;
         top: 0px;
         transform: translateX(-1000px) rotate(30deg);
-        opacity: 0.9;
         z-index: 1000;
     }
 

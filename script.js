@@ -55,7 +55,6 @@ for(let i = 0; i < a; i++) {
 function darkMode(x) {
     generateLightColorHex()
     randDarkColor()
-    randDarkColor2()
     document.body.classList.toggle('dark-mode');
     x.classList.toggle("fa-moon");
 }
