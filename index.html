@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <link href="https://rawcdn.githack.com/hung1001/font-awesome-pro-v6/44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </script>
 
 </head>
@@ -157,7 +158,7 @@
 
     <section class="projects" id="projects">
         <h3>A Selection Of My Favorite Works 💻</h3>
-        
+
         <div class="cards-container">
 
             <div class="flip-card">
@@ -166,9 +167,7 @@
                         <img src="./images/hoobank.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
+                        <i class="fa fa-link"></i>
                     </div>
                 </div>
             </div>
@@ -179,9 +178,7 @@
                         <img src="./images/admin-dashboard-app.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
+                        <i class="fa fa-link"></i>
                     </div>
                 </div>
             </div>
@@ -192,56 +189,11 @@
                         <img src="./images/fitness-app.png" alt="Avatar">
                     </div>
                     <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
+                        <i class="fa fa-link"></i>
                     </div>
                 </div>
             </div>
             
-        </div>
-
-        <div class="cards-container">
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="./images/gpt-3.png" alt="Avatar">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="./images/gericht.png" alt="Avatar">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="./images/travel-advisor.png" alt="Avatar">
-                    </div>
-                    <div class="flip-card-back">
-                        <h1>John Doe</h1>
-                        <p>Architect & Engineer</p>
-                        <p>We love that guy</p>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
     </section>
@@ -262,6 +214,13 @@
                     <div class="leftContent">
                         <h2>Jade</h2>
                         <p><b>- <em>Project Manager</em></b></p><br>
+                        <p class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
                         <p><i class="fad fa-quote-left"></i>We couldn't have made a better decision. Hernando has a great human team: competent, responsible and committed. The results show the quality and experience of his work.<i class="fad fa-quote-right"></i></p>
                     </div>
                 </div>
@@ -275,6 +234,13 @@
                     <div class="leftContent">
                         <h2>Alex</h2>
                         <p><b>- <em>Web Developer</em></b></p><br>
+                        <p class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
                         <p><i class="fad fa-quote-left"></i>One of the things that I highlight the most is the versatility it has to be able to capture what the client really needs and what the client wants to project and make known on their digital pages. He is a person who really works for you with love, dedication, commitment and responsibility, there is never no for an answer.<i class="fad fa-quote-right"></i></p>
                     </div>
                 </div>
@@ -288,6 +254,13 @@
                     <div class="leftContent">
                         <h2>Brayan</h2>
                         <p><b>- <em>Software Engineer</em></b></p><br>
+                        <p class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </p>
                         <p><i class="fad fa-quote-left"></i>He is an empathetic person who cares deeply about the results of his clients and always gives an incredible service. I recommend it 100% to every person who needs digital services.<i class="fad fa-quote-right"></i></p>
                     </div>
                 </div>
@@ -310,7 +283,7 @@
     <!-- contact -->
     
     <section class="contact" id="contact">
-        <h3>Contact 📴</h3>
+        <h3>Contact 👋</h3>
         <p>Dropping a line to say hello, ask for my resume or see if we can build something amazing together? I’d love to hear from you!</p>
         <br>
         <p>Fill in your info in the form below and I look forward to hearing from you!</p>
@@ -323,7 +296,7 @@
                     <input type="email" name="email" placeholder="E-mail"><br><br>
                     <input type="phone" name="phone" placeholder="Phone Number"><br><br>
                     <textarea name="message" id="message" rows="10" placeholder="Write your message"></textarea><br><br>
-                    <button type="submit">Send <i class="fa fa-paper-plane"></i></button>
+                    <button type="submit">Send Message <i class="fa fa-paper-plane"></i></button>
                 </form>
             </div>
         </div>
@@ -344,6 +317,11 @@
     <!-- footer -->
 
     <!-- scripts -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./script.js"></script>
 
     <!-- scripts -->

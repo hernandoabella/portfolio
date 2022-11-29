@@ -33,6 +33,10 @@ a {
     font-family: 'Hammersmith One', sans-serif;
 }
 
+.dark-mode a {
+    color: rgb(139, 249, 143);
+}
+
 /*effect-underline*/
 a.effect-underline:after {
     content: '';
@@ -113,6 +117,7 @@ a.effect-shine:hover {
 h3 {
     font-family: 'Hammersmith One', sans-serif;
     font-size: 2em;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
 }
 
 /* header */
@@ -148,6 +153,11 @@ nav {
 .logo {
     font-size: 1em;
     font-family: 'Hammersmith One', sans-serif;
+}
+
+.dark-mode {
+    color: rgb(139, 249, 143);
+    background: rgb(9, 35, 95);
 }
 
 .darkBtn {
@@ -186,14 +196,26 @@ nav {
 
 .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
-    background: var(--bg-theme);
+    background: var(--bg-theme) !important;
 }
 
 .change .bar2 {opacity: 0;}
 
 .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
-    background: var(--bg-theme);
+    background: var(--bg-theme) !important;
+}
+
+.dark-mode .bar1 {
+    background: rgb(139, 249, 143);
+}
+
+.dark-mode .bar3 {
+    background: rgb(139, 249, 143);
+}
+
+.dark-mode .bar2 {
+    background: rgb(139, 249, 143);
 }
 
 @media only screen and (max-width: 768px) {
@@ -204,7 +226,7 @@ nav {
 
     nav {
         flex-direction: column;
-        background: var(--black);
+        background: rgba(62, 65, 71, .9);
         color: var(--bg-theme);
         padding: 20px;
         width: 100%;
@@ -231,7 +253,7 @@ nav {
     }
 
     nav ul li a {
-        color: var(--bg-theme);
+        color: var(--bg-theme) !important;
     }
 
     .burger-menu {
@@ -276,6 +298,10 @@ nav {
     transition: .3s;
 }
 
+.dark-mode .hero .social i {
+    color:rgb(139, 249, 143);
+}
+
 .hero .social i:hover {
     transform: scale(1.5);
 }
@@ -311,7 +337,14 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
-    
+
+    .hero h1 {
+        font-size: 1.8em;
+    }
+
+    .hero h3 {
+        font-size: 1.3em;
+    }
 }
 
 /* hero */
@@ -364,6 +397,11 @@ nav {
 @media only screen and (max-width: 768px) {
     .xp h2 {
         text-align: center;
+        font-size: 2em;
+    }
+
+    .xp h3 {
+        font-size: 1.5em;
     }
 
     .position-info {
@@ -400,12 +438,19 @@ nav {
     padding: 30px;
 }
 
+.tools img {
+    user-select: none;
+}
+
 .tool-container {
     margin-top: 30px;
 }
 
 @media only screen and (max-width: 768px) {
-    
+    .tools h3 {
+        padding: 20px;
+        font-size: 1.5em;
+    }
 }
 
 /* toolbox */
@@ -420,33 +465,41 @@ nav {
 
 .projects h3 {
     padding: 30px;
-    color: var(--white);
+    color: var(--bg-theme);
+    transition: .3s;
 }
 
 .project-container {
-    margin: auto 50px;
+    margin: auto;
     width: 900px;
 }
 
 .cards-container {
     display: flex;
     justify-content: space-evenly;
+    padding: 20px;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-    background-color: transparent;
     width: 300px;
-    height: 200px;
+    height: 180px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
     margin: 20px;
     cursor: pointer;
     transition: .3s;
+    border-radius: 25px;
+    user-select: none;
+}
+
+.flip-card:hover {
+    opacity: 0.5;
 }
 
 .flip-card img {
     width: 100%;
-    height: 200px;
+    height: 180px;
+    border-radius: 25px;
 }
 
   /* This container is needed to position the front and back side */
@@ -477,16 +530,26 @@ nav {
 .flip-card-front {
     background-color: #bbb;
     color: black;
+    border-radius: 25px;
 }
 
   /* Style the back side */
 .flip-card-back {
-    background-color: dodgerblue;
+    background-color: var(--bg-theme);
     color: white;
     transform: rotateY(180deg);
+    border-radius: 25px;
 }
 
-
+.fa-link {
+    position: relative;
+    transform: translate(-50%, -50%);
+    right: -20px;
+    top: 50%;
+    background: var(--black);
+    padding: 10px;
+    border-radius: 100%;
+}
 
 @media only screen and (max-width: 1000px) {
     .cards-container {
@@ -495,12 +558,18 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+
+    .projects h3 {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+
     .cards-container {
         flex-direction: column;
     }
 
     .flip-card {
-        width: 300px;
+        width: 380px;
         padding: 10px;
         cursor: pointer;
         transition: .3s;
@@ -521,15 +590,19 @@ nav {
     .flip-card:hover .flip-card-inner {
         transform: rotateY(180deg) scale(1);
     }
-
-    
 }
 
 @media only screen and (max-width: 450px) {
+
+    .cards-container {
+        padding: 0;
+    }
+
     .flip-card {
         margin: 20px 0px;
         width: 100%;
     }
+
 }
 
 /* projects */
@@ -546,7 +619,8 @@ nav {
 }
 
 .testimonials h3 {
-    margin: 30px;
+    padding: 30px;
+    transition: .3s;
 }
 
 .testimonials img { 
@@ -575,6 +649,10 @@ nav {
     background: var(--black);
     transition: .3s;
     animation: animation1 1s;
+}
+
+.dark-mode .active {
+    background: rgb(139, 249, 143);
 }
 
   /* Fading animation */
@@ -611,6 +689,18 @@ nav {
     font-size: 2em;
 }
 
+.stars {
+    margin-bottom: 20px;
+}
+
+.fa-star {
+    color: var(--black);
+}
+
+.dark-mode .fa-star{
+    color:rgb(139, 249, 143);
+}
+
 @keyframes animation1 {
     50% {
         opacity: .5;
@@ -620,10 +710,21 @@ nav {
 }
 
 @media only screen and (max-width: 768px) {
+    .testimonials h3 {
+        padding: 20px;
+        font-size: 1.5em;
+    }
+
     .testimonials img {
-        width: 100%;
+        width: 300px;
         transition: .3s;
         box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        border: 10px dashed var(--black);
+        outline: none;
+    }
+
+    .dark-mode .testimonials img {
+        border: 10px dashed rgb(139, 249, 143);
     }
 
     .flexSlide {
@@ -657,6 +758,13 @@ nav {
     }
 }
 
+@media only screen and (max-width: 450px) {
+
+    .testimonials img {
+        width: 100%;
+    }
+}
+
 /* testimonials */
 
 /* contact */
@@ -669,6 +777,7 @@ nav {
 
 .contact h3 {
     padding: 30px;
+    color: var(--bg-theme);
 }
 
 form {
@@ -686,6 +795,7 @@ form input, form textarea, form button {
     font-family: 'Roboto', sans-serif;
     border-radius: 25px;
     border: none;
+    outline: none;
 }
 
 form button {
@@ -723,8 +833,14 @@ form button:hover {
 
 @media only screen and (max-width: 768px) {
 
+    .contact {
+        padding: 20px;
+    }
+
     .contact h3 {
         text-align: center;
+        padding: 20px;
+        font-size: 1.5em;
     }
 
     .contact {
@@ -747,6 +863,8 @@ form button:hover {
     }
 }
 
+
+
 /* contact */
 
 /* footer */
@@ -762,7 +880,7 @@ footer p {
 }
 
 footer a {
-    color: #fff;
+    text-decoration: underline;
 }
 
 #hora {

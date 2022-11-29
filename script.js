@@ -4,91 +4,11 @@ function toggleMenu(x) {
     document.querySelector('nav').classList.toggle('changeNav');
 }
 
-// generate random dark color
-function randDarkColor() {
-    let lum = -0.25;
-    let hex = String('#' + Math.random().toString(16).slice(2, 8).toUpperCase()).replace(/[^0-9a-f]/gi, '');
-    if (hex.length < 6) {
-        hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
-    }
-    let rgb = "#",
-        c, i;
-    for (i = 0; i < 3; i++) {
-        c = parseInt(hex.substr(i * 2, 2), 16);
-        c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
-        rgb += ("00" + c).substr(c.length);
-    }
-    
-    document.body.style.background = rgb;
-    
-}
-
-// generate light color
-
-function generateLightColorHex() {
-    let color = "#";
-    for (let i = 0; i < 3; i++){
-        color += ("0" + Math.floor(((1 + Math.random()) * Math.pow(16, 2)) / 2).toString(16)).slice(-2);
-    }
-
-    document.body.style.color = color;
-    document.querySelector('h1').style.color = color;
-    
-    let a = document.querySelectorAll("li a");
-    for(let i = 0; i < a.length; i++){
-        a[i].style.color = color;
-    }
-
-}
-
-// set default colors
-document.body.style.background = "#fff";
-document.body.style.color = "black";
-
-let a = document.querySelectorAll('li a');
-
-for(let i = 0; i < a; i++) {
-    a[i].style.color = "green";
-}
-
 // dark mode btn
 function darkMode(x) {
-    generateLightColorHex()
-    randDarkColor()
     document.body.classList.toggle('dark-mode');
     x.classList.toggle("fa-moon");
 }
-
-// default mode btn
-var defaultState = false;
-
-function defaultMode() {
-    if(!defaultState) {
-        document.body.style.background = "#99C24D";
-        document.body.style.color = "#3E4147";
-        let a = document.querySelectorAll("li a");
-
-        // for(let i = 0; i < a.length; i++) {
-        //     a[i].style.color = "#3E4147";
-        // }
-
-        // document.querySelector('h1').style.color = "#3E4147";
-
-        defaultState = true;
-    } else {
-        defaultState = false;
-    }
-}
-
-function clickHandler() {
-    defaultMode();
-    let mybtn = document.querySelector('.my-btn');
-
-    mybtn.addEventListener('click', defaultMode);
-}
-
-onload = () => clickHandler();
-
 
 // show hour
 function getTime() {
@@ -112,10 +32,6 @@ let slideIndex = 0;
 showSlides();
 
 function showSlides() {
-
-    // background: var(--black);
-    // transition: .3s;
-    // animation: animation1 1s;
     let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
@@ -132,11 +48,9 @@ function showSlides() {
     // dots[slideIndex-1].style.background = "blue";
     
     setTimeout(showSlides, 5000); // Change image every 10 seconds
-
 }
 
 // typing effect
-
 const typedTextSpan = document.querySelector('.typed-text');
 const cursorSpan = document.querySelector('.cursor');
 
