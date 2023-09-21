@@ -7,7 +7,7 @@ const CTA: React.FC = () => {
         <h2 className="text-2xl font-semibold mb-4">Ready to Get Started?</h2>
         <p className="text-lg mb-8">Contact me today to discuss your project or for any inquiries. I&apos;m here to help!</p>
         <a
-          href="#contact"
+          href="#contact" // Puedes reemplazar esto con el enlace a tu formulario de contacto o página de contacto
           className="bg-white text-blue-900 hover:bg-blue-600 hover:text-white py-2 px-6 rounded-full text-lg font-semibold transition duration-300"
         >
           Contact Me
