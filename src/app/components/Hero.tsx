@@ -22,6 +22,9 @@ const Hero: React.FC = () => {
         <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-300">
           View Projects
         </button>
+        <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-300">
+          Download CV
+        </button>
       </div>
     </section>
   );
