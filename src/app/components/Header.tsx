@@ -14,9 +14,17 @@ const Header: React.FC = () => {
               <li>
                 <a
                   className="hover:text-sky-500 dark:hover:text-sky-400"
-                  href="/docs/installation"
+                  href="#experience"
                 >
-                  Docs
+                  Education
+                </a>
+              </li>
+              <li>
+                <a
+                  className="hover:text-sky-500 dark:hover:text-sky-400"
+                  href="#experience"
+                >
+                  Experience
                 </a>
               </li>
               <li>
@@ -24,7 +32,15 @@ const Header: React.FC = () => {
                   href="https://tailwindui.com/?ref=top"
                   className="hover:text-sky-500 dark:hover:text-sky-400"
                 >
-                  Components
+                  Projects
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://tailwindui.com/?ref=top"
+                  className="hover:text-sky-500 dark:hover:text-sky-400"
+                >
+                  Skills
                 </a>
               </li>
               <li>
@@ -38,9 +54,9 @@ const Header: React.FC = () => {
               <li>
                 <a
                   className="hover:text-sky-500 dark:hover:text-sky-400"
-                  href="/showcase"
+                  href="#"
                 >
-                  Showcase
+                  Contact
                 </a>
               </li>
             </ul>
@@ -104,8 +120,8 @@ const Header: React.FC = () => {
             <a
               href="https://github.com/hernandoabella"
               className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
+              title="github"
             >
-              <span className="sr-only">Tailwind CSS on GitHub</span>
               <svg
                 viewBox="0 0 16 16"
                 className="w-5 h-5"
