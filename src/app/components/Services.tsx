@@ -1,20 +1,12 @@
-import React from 'react';
+import React from "react";
 
-const Services = ({ services }) => {
+const Services = () => {
   return (
     <section id="services" className="section">
-      <div className="container">
-        <h2 className="section-title">Nuestros Servicios</h2>
-        <div className="row">
-          {services.map((service) => (
-            <div key={service.id} className="col-md-6 col-lg-4">
-              <div className="service-item">
-                <h3 className="service-title">{service.title}</h3>
-                <p className="service-description">{service.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+      <div className="container mx-auto">
+        <h2 className="py-4 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50">
+          Services 👨‍🔧
+        </h2>
       </div>
     </section>
   );
