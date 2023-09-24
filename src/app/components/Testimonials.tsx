@@ -3,15 +3,15 @@ import Image from "next/image";
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-10">
+    <section className="bg-white py-10">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-semibold mb-8 text-center mt-4 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50">
+        <h2 className="py-4 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50 text-center">
           Client Testimonials ⭐
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Testimonial 1 */}
           <div className="text-sm leading-6">
-            <figure className="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+            <figure className="relative flex flex-col-reverse rounded-lg shadow-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
               <blockquote className="mt-6 text-slate-700 dark:text-slate-300">
                 <p>
                 <i className="fa-solid fa-quote-left"></i> He is an empathetic person who cares deeply about the results of his clients and always provides an incredible service. I recommend him 100% to anyone in need of digital services. <i className="fa-solid fa-quote-right"></i>
@@ -51,7 +51,7 @@ const Testimonials: React.FC = () => {
 
           {/* Testimonial 2 */}
           <div className="text-sm leading-6">
-            <figure className="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+            <figure className="relative flex flex-col-reverse rounded-lg shadow-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
               <blockquote className="mt-6 text-slate-700 dark:text-slate-300">
                 <p>
                 <i className="fa-solid fa-quote-left"></i> One of the things I appreciate the most is its versatility in capturing what the client truly needs and what the client wants to convey and promote on their digital platforms. He is someone who works for you with love, dedication, commitment, and responsibility, and there is never a &quot;no&quot; for an answer. <i className="fa-solid fa-quote-right"></i>
@@ -90,7 +90,7 @@ const Testimonials: React.FC = () => {
 
           {/* Testimonial 3 */}
           <div className="text-sm leading-6">
-            <figure className="relative flex flex-col-reverse bg-slate-50 rounded-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
+            <figure className="relative flex flex-col-reverse rounded-lg shadow-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
               <blockquote className="mt-6 text-slate-700 dark:text-slate-300">
                 <p>
                 <i className="fa-solid fa-quote-left"></i> We couldn&apos;t have made a better decision. Hernando has a great
