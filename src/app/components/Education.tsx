@@ -9,7 +9,7 @@ const Education: React.FC = () => {
         </h2>
         <ol className="relative border-l border-gray-200 dark:border-gray-700">
           <li>
-            <li className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
+            <div className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
               <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
               <h3 className="text-xl font-semibold mb-2">
                 Bachelor of Science in Computer Science
@@ -41,7 +41,7 @@ const Education: React.FC = () => {
                   coursework and coding assignments.
                 </li>
               </ul>
-            </li>
+            </div>
           </li>
         </ol>
       </div>
