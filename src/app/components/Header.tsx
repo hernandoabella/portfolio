@@ -3,10 +3,13 @@ import React from "react";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white text-black p-4 dark:bg-blue-900">
+    <header className="bg-white text-black p-4 dark:bg-blue-900 px-10">
       <div className="container mx-auto flex items-center justify-between">
         <div>
           <h1>Hernando Abella</h1>
+        </div>
+        <div className="md:hidden">
+          <i className="fa-duotone fa-ellipsis-stroke cursor-pointer"></i>
         </div>
         <div className="hidden md:flex items-center">
           <nav>
@@ -35,30 +38,7 @@ const Header: React.FC = () => {
                   Showcase
                 </a>
               </li>
-              {/* <li>
-                <a
-                  href="https://tailwindui.com/?ref=top"
-                  className="hover:text-blue-500 dark:hover:text-blue-400"
-                >
-                  Side Projects
-                </a>
-              </li> */}
-              <li>
-                <a
-                  href="https://tailwindui.com/?ref=top"
-                  className="hover:text-blue-500 dark:hover:text-blue-400"
-                >
-                  Skills
-                </a>
-              </li>
-              <li>
-                <a
-                  className="hover:text-blue-500 dark:hover:text-blue-400"
-                  href="/blog"
-                >
-                  Blog
-                </a>
-              </li>
+
               <li>
                 <a
                   className="hover:text-blue-500 dark:hover:text-blue-400"
