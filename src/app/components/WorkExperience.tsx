@@ -2,7 +2,7 @@ import React from "react";
 
 const WorkExperience: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-10">
+    <section className="bg-gray-100 py-10 px-10">
       <div className="container mx-auto">
         <h2 className="py-4 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50">
           Work Experience 💼
@@ -10,15 +10,15 @@ const WorkExperience: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <ol className="relative border-l border-gray-200 dark:border-gray-700">
-              <li className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
+            <div className="relative border-l border-gray-200 dark:border-gray-700">
+              <div className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
                 <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <h3 className="text-lg font-semibold">Full Stack Developer</h3>
                 <p className="text-gray-600">Smart Design Development</p>
                 <time className="text-sm mt-4 text-blue-500">
                   September 2020 – October 2022
                 </time>
-                <p className="mt-2">
+                <div className="mt-2">
                   <ul className="list-disc list-inside mt-4">
                     <li>
                       Led architecture, design, and development of 30+ new
@@ -41,9 +41,9 @@ const WorkExperience: React.FC = () => {
                       hours of tedious work per week.
                     </li>
                   </ul>
-                </p>
-              </li>
-              <li className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
+                </div>
+              </div>
+              <div className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
                 <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <h3 className="text-lg font-semibold">Full Stack Developer</h3>
                 <p className="text-gray-600">General Gaming</p>
@@ -68,13 +68,13 @@ const WorkExperience: React.FC = () => {
                     with complete accuracy.
                   </li>
                 </ul>
-              </li>
-            </ol>
+              </div>
+            </div>
           </div>
 
           <div>
-            <ol className="relative border-l border-gray-200 dark:border-gray-700">
-              <li className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
+            <div className="relative border-l border-gray-200 dark:border-gray-700">
+              <div className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
                 <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <h3 className="text-lg font-semibold">
                   Junior Full Stack Developer
@@ -84,19 +84,26 @@ const WorkExperience: React.FC = () => {
                   December 2012–April 2016
                 </time>
                 <ul className="list-disc list-inside mt-4">
-                  <li>Maximized application’s efficiency, data quality, scope, operability, and flexibility.</li>
-                  <li>Used various ideas from
-                  distributed computing, large-scale design, real-time data
-                  processing, data storage, ML, and AI to solve challenging
-                  dataset problems.</li>
-                  <li>Managed, optimized, and updated PHP
-                  databases as necessary.</li>
-                  <li>Developed app integration with REST /
-                  SOAP and other APIs for Google Maps, social media logins,
-                  payment processors, and other services.</li>
+                  <li>
+                    Maximized application’s efficiency, data quality, scope,
+                    operability, and flexibility.
+                  </li>
+                  <li>
+                    Used various ideas from distributed computing, large-scale
+                    design, real-time data processing, data storage, ML, and AI
+                    to solve challenging dataset problems.
+                  </li>
+                  <li>
+                    Managed, optimized, and updated PHP databases as necessary.
+                  </li>
+                  <li>
+                    Developed app integration with REST / SOAP and other APIs
+                    for Google Maps, social media logins, payment processors,
+                    and other services.
+                  </li>
                 </ul>
-              </li>
-              <li className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
+              </div>
+              <div className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
                 <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
                 <h3 className="text-lg font-semibold">Front End Developer</h3>
                 <p className="text-gray-600">Tech Innovators</p>
@@ -110,8 +117,8 @@ const WorkExperience: React.FC = () => {
                   Ensured cross-browser compatibility and optimized web
                   performance for improved user experience.
                 </p>
-              </li>
-            </ol>
+              </div>
+            </div>
           </div>
         </div>
       </div>
