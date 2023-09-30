@@ -6,7 +6,6 @@ import WorkExperience from "../app/components/WorkExperience";
 import Toolbox from "../app/components/Toolbox";
 import MyWorks from "../app/components/MyWorks";
 import Testimonials from "../app/components/Testimonials";
-import Services from "../app/components/Services";
 import Contact from "../app/components/Contact";
 import Footer from "../app/components/Footer";
 
@@ -19,7 +18,6 @@ export default function Home() {
       <WorkExperience />
       <Toolbox />
       <MyWorks />
-      <Services />
       <Testimonials />
       <Contact />
       <Footer />
