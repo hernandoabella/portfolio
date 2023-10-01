@@ -16,7 +16,8 @@ const Contact: React.FC = () => {
             <i className="fa-solid fa-phone"></i>+57-304-393-2597
           </div>
           <div className="py-4 text-xl flex items-center gap-2">
-            <i className="fa-solid fa-phone"></i>hernandoabella@gmail.com
+            <i className="fa-sharp fa-solid fa-envelopes"></i>
+            hernandoabella@gmail.com
           </div>
           <div className="py-4 text-xl flex items-center gap-2">
             <i className="fa-sharp fa-solid fa-location-dot"></i>Santa Marta,
