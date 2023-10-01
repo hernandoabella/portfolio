@@ -110,13 +110,22 @@ const WorkExperience: React.FC = () => {
                 <time className="text-sm mt-4 text-blue-500">
                   July 2010–March 2012
                 </time>
-                <p className="mt-2">
-                  Collaborated with UI/UX designers to create responsive and
-                  visually appealing web interfaces. Developed interactive and
-                  user-friendly features using HTML, CSS, and JavaScript.
-                  Ensured cross-browser compatibility and optimized web
-                  performance for improved user experience.
-                </p>
+                <div className="mt-2">
+                  <ul className="list-disc list-inside mt-4">
+                    <li>
+                      Collaborated with UI/UX designers to create responsive and
+                      visually appealing web interfaces.
+                    </li>
+                    <li>
+                      Developed interactive and user-friendly features using
+                      HTML, CSS, and JavaScript.
+                    </li>
+                    <li>
+                      Ensured cross-browser compatibility and optimized web
+                      performance for improved user experience.
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
