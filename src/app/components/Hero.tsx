@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-white  py-20 px-10">
+    <section className="dark:bg-slate-900 py-20 px-10">
       <div className="mx-auto text-center ">
         <Image
           src="/profile.png"
