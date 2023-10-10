@@ -188,6 +188,15 @@ const Toolbox: React.FC = () => {
               </div>
               <div>
                 <Image
+                  src="/git-original.svg"
+                  alt=""
+                  width={56}
+                  height={56}
+                  className="w-16 h-16"
+                />
+              </div>
+              <div>
+                <Image
                   src="/github-original.svg"
                   alt=""
                   width={56}
