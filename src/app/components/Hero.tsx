@@ -20,12 +20,20 @@ const Hero: React.FC = () => {
           exceptional solutions. Let's redefine what's possible together!
         </p>
         <div className="flex sm:justify-center sm:flex-row flex-col gap-4 mt-10">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-300">
+          <a
+            href="#projects"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-300"
+          >
             View Projects
-          </button>
-          <button className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-300">
+          </a>
+
+          <a
+            href="/hernandoabella-cv.pdf"
+            download={true}
+            className="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-semibold transition duration-300"
+          >
             Download CV
-          </button>
+          </a>
         </div>
       </div>
     </section>
