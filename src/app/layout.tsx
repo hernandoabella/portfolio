@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "next-themes";
 const inter = Inter({ subsets: ["latin"] });
+import { ThemeProvider } from "./theme-provider";
 
 export const metadata: Metadata = {
   title: "Hernando Abella's Portfolio",
@@ -34,7 +34,12 @@ export default function RootLayout({
           href="https://site-assets.fontawesome.com/releases/v6.4.0/css/sharp-light.css"
         />
       </head>
-      <body className={inter.className}>{children}</body>
+
+      <body className={inter.className}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <main>{children}</main>
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
