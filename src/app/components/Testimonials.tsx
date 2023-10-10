@@ -14,13 +14,17 @@ const Testimonials: React.FC = () => {
             <figure className="relative flex flex-col-reverse rounded-lg shadow-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
               <blockquote className="mt-6 text-slate-700 dark:text-slate-300">
                 <p>
-                <i className="fa-solid fa-quote-left"></i> He is an empathetic person who cares deeply about the results of his clients and always provides an incredible service. I recommend him 100% to anyone in need of digital services. <i className="fa-solid fa-quote-right"></i>
+                  <i className="fa-solid fa-quote-left"></i> He is an empathetic
+                  person who cares deeply about the results of his clients and
+                  always provides an incredible service. I recommend him 100% to
+                  anyone in need of digital services.{" "}
+                  <i className="fa-solid fa-quote-right"></i>
                 </p>
               </blockquote>
               <figcaption className="flex items-center space-x-4">
                 <div className="flex-none w-14 h-14 rounded-full object-fit">
                   <Image
-                    src="/test1.jpg"
+                    src="/test4.jpg"
                     alt=""
                     width={56}
                     height={56}
@@ -31,12 +35,11 @@ const Testimonials: React.FC = () => {
                 </div>
                 <div className="flex-auto">
                   <div className="text-base text-slate-900 font-semibold dark:text-slate-300">
-                    <a href="https://twitter.com/brethart" target="_blank">
-                      <span className="absolute inset-0"></span>Bret &quot;The
-                      Hitman&quot; Hart
+                    <a href="https://twitter.com/gregsvn">
+                      <span className="absolute inset-0"></span>Greg Sullivan
                     </a>
                   </div>
-                  <div className="mt-0.5">Former WWE Champion</div>
+                  <div className="mt-0.5">WordPress Developer</div>
                   <div>
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
@@ -54,7 +57,13 @@ const Testimonials: React.FC = () => {
             <figure className="relative flex flex-col-reverse rounded-lg shadow-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
               <blockquote className="mt-6 text-slate-700 dark:text-slate-300">
                 <p>
-                <i className="fa-solid fa-quote-left"></i> One of the things I appreciate the most is its versatility in capturing what the client truly needs and what the client wants to convey and promote on their digital platforms. He is someone who works for you with love, dedication, commitment, and responsibility, and there is never a &quot;no&quot; for an answer. <i className="fa-solid fa-quote-right"></i>
+                  <i className="fa-solid fa-quote-left"></i> One of the things I
+                  appreciate the most is its versatility in capturing what the
+                  client truly needs and what the client wants to convey and
+                  promote on their digital platforms. He is someone who works
+                  for you with love, dedication, commitment, and responsibility,
+                  and there is never a &quot;no&quot; for an answer.{" "}
+                  <i className="fa-solid fa-quote-right"></i>
                 </p>
               </blockquote>
               <figcaption className="flex items-center space-x-4">
@@ -93,9 +102,11 @@ const Testimonials: React.FC = () => {
             <figure className="relative flex flex-col-reverse rounded-lg shadow-lg p-6 dark:bg-slate-800 dark:highlight-white/5">
               <blockquote className="mt-6 text-slate-700 dark:text-slate-300">
                 <p>
-                <i className="fa-solid fa-quote-left"></i> We couldn&apos;t have made a better decision. Hernando has a great
-                  human team: competent, responsible, and committed. The results
-                  show the quality and experience of his work. <i className="fa-solid fa-quote-right"></i>
+                  <i className="fa-solid fa-quote-left"></i> We couldn&apos;t
+                  have made a better decision. Hernando has a great human team:
+                  competent, responsible, and committed. The results show the
+                  quality and experience of his work.{" "}
+                  <i className="fa-solid fa-quote-right"></i>
                 </p>
               </blockquote>
               <figcaption className="flex items-center space-x-4">
