@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const MyWorks: React.FC = () => {
   return (
-    <section className="py-10 px-10 bg-gray-100">
+    <section className="py-10 px-10 bg-gray-100" id="projects">
       <div className="container mx-auto">
         <h2 className="py-4 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50">
           Showcase 🧑‍💼
@@ -27,8 +27,11 @@ const MyWorks: React.FC = () => {
               used, your role, and any relevant details. Include a link or
               button for more information.
             </p>
-            <a href="#" className="text-blue-500 hover:underline block">
-              Learn More
+            <a
+              href="https://hernandoabella.github.io/hoobank/"
+              className="text-blue-500 hover:underline block"
+            >
+              Explore
               <span>
                 <i className="fa-regular fa-arrow-up-right-from-square ml-2"></i>
               </span>
@@ -50,8 +53,9 @@ const MyWorks: React.FC = () => {
               used, your role, and any relevant details. Include a link or
               button for more information.
             </p>
-            <a href="#" className="text-blue-500 hover:underline block">
-              Learn More
+            <a
+              href="https://hernandoabella.github.io/ntf-landing-page/" className="text-blue-500 hover:underline block">
+              Explore
               <span>
                 <i className="fa-regular fa-arrow-up-right-from-square ml-2"></i>
               </span>
@@ -75,8 +79,9 @@ const MyWorks: React.FC = () => {
               used, your role, and any relevant details. Include a link or
               button for more information.
             </p>
-            <a href="#" className="text-blue-500 hover:underline block">
-              Learn More
+            <a
+              href="https://hernandoabella.github.io/coin-base/" className="text-blue-500 hover:underline block">
+              Explore
               <span>
                 <i className="fa-regular fa-arrow-up-right-from-square ml-2"></i>
               </span>
