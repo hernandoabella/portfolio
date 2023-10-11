@@ -19,7 +19,7 @@ const Header: React.FC = () => {
               <li>
                 <a
                   className="hover:text-blue-500 dark:hover:text-blue-400"
-                  href="#experience"
+                  href="#education"
                 >
                   Education
                 </a>
@@ -34,7 +34,7 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <a
-                  href="https://tailwindui.com/?ref=top"
+                  href="#projects"
                   className="hover:text-blue-500 dark:hover:text-blue-400"
                 >
                   Showcase
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
               <li>
                 <a
                   className="hover:text-blue-500 dark:hover:text-blue-400"
-                  href="#"
+                  href="#contact"
                 >
                   Contact
                 </a>
