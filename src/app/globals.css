@@ -5,3 +5,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+@font-face {
+  font-family: "AmsterdamFour";
+  src: url("/amsterdam-four-ttf.ttf") format("truetype");
+  /* You may need to adjust the path to match your project structure. */
+}
+
+.logo {
+  font-family: "AmsterdamFour", sans-serif; /* Use the font-family you defined above. */
+}
