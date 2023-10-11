@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="bg-white py-10 px-10">
+    <section className="py-10 px-10 dark:bg-slate-900">
       <div className="container mx-auto">
-        <h2 className="py-4 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50 text-center">
-          Client Testimonials ⭐
+        <h2 className="pb-10 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50 text-center">
+          Testimonials
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Testimonial 1 */}
@@ -40,7 +40,7 @@ const Testimonials: React.FC = () => {
                     </a>
                   </div>
                   <div className="mt-0.5">WordPress Developer</div>
-                  <div>
+                  <div className="py-2 flex gap-1 dark:text-slate-500">
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
@@ -85,7 +85,7 @@ const Testimonials: React.FC = () => {
                     </a>
                   </div>
                   <div className="mt-0.5">Full-Stack Developer</div>
-                  <div>
+                  <div className="py-2 flex gap-1 dark:text-slate-500">
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
@@ -128,7 +128,7 @@ const Testimonials: React.FC = () => {
                     </a>
                   </div>
                   <div className="mt-0.5">Software Engineer</div>
-                  <div>
+                  <div className="py-2 flex gap-1 dark:text-slate-500">
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
                     <i className="fa-solid fa-star"></i>
