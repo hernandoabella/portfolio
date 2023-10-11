@@ -5,17 +5,17 @@ import { ThemeSwitcher } from "../ThemeSwitcher";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-white text-black p-4 dark:bg-blue-900 px-10">
+    <header className="text-black p-6 dark:bg-slate-900 px-10">
       <div className="container mx-auto flex items-center justify-between">
         <div>
-          <h1>Hernando Abella</h1>
+          <h1 className="logo select-none text-xl dark:text-slate-50">Hernando Abella</h1>
         </div>
         <div className="md:hidden">
-          <i className="fa-duotone fa-ellipsis-stroke cursor-pointer"></i>
+          <i className="fa fa-ellipsis-stroke cursor-pointer dark:text-slate-50"></i>
         </div>
         <div className="hidden md:flex items-center">
           <nav>
-            <ul className="flex items-center gap-x-8 text-slate-500 hover:text-slate-600 text-sm font-semibold">
+            <ul className="flex items-center gap-x-8 text-slate-500 dark:text-slate-300 text-sm font-semibold">
               <li>
                 <a
                   className="hover:text-blue-500 dark:hover:text-blue-400"
@@ -53,7 +53,6 @@ const Header: React.FC = () => {
           </nav>
           <div className="flex items-center border-l border-slate-200 ml-6 pl-6 dark:border-slate-800">
             <ThemeSwitcher />
-            
             <a
               href="https://x.com/hernandoabella"
               className="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
