@@ -21,21 +21,24 @@ const MyWorks: React.FC = () => {
               />
             </div>
             <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2 dark:text-slate-50">
-              Hoobank - Landing Page
-            </h3>
-            <p className="text-slate-400 mb-4">
-            Responsive React JS application consisting of a stunning hero section, high-quality assets and gradients, business stats, reusable feature sections with call-to-action buttons, testimonials, and more!
-            </p>
-            <a
-              href="https://hernandoabella.github.io/hoobank/"
-              className="text-blue-500 hover:underline block"
-            >
-              <span>
-                <i className="fa-regular fa-arrow-up-right-from-square mr-2"></i>
-              </span>
-              Explore
-            </a>{" "}
+              <h3 className="text-lg font-semibold mb-2 dark:text-slate-50">
+                Hoobank
+              </h3>
+              <p className="text-slate-400 mb-4">
+                Responsive React JS application featuring a captivating hero
+                section, high-quality visuals and gradients, key business
+                statistics, reusable feature sections with compelling
+                call-to-action buttons, genuine customer testimonials, and more.
+              </p>
+              <a
+                href="https://hernandoabella.github.io/hoobank/"
+                className="text-blue-500 hover:underline block"
+              >
+                <span>
+                  <i className="fa-regular fa-arrow-up-right-from-square mr-2"></i>
+                </span>
+                Explore
+              </a>{" "}
             </div>
           </div>
           {/* project-card two */}
@@ -50,19 +53,25 @@ const MyWorks: React.FC = () => {
               />
             </div>
             <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2 dark:text-slate-50">NTF - Landing-page</h3>
-            <p className="text-slate-400 mb-4">
-              Description of your project. You can mention the technologies
-              used, your role, and any relevant details. Include a link or
-              button for more information.
-            </p>
-            <a
-              href="https://hernandoabella.github.io/ntf-landing-page/" className="text-blue-500 hover:underline block">
-              <span>
-                <i className="fa-regular fa-arrow-up-right-from-square mr-2"></i>
-              </span>
-              Explore
-            </a>{" "}
+              <h3 className="text-lg font-semibold mb-2 dark:text-slate-50">
+                NTF
+              </h3>
+              <p className="text-slate-400 mb-4">
+                This React-based NTF landing page is designed to be fully
+                responsive. It showcases a striking hero section, top-notch
+                graphics and gradients, essential business metrics, reusable
+                feature sections with enticing call-to-action buttons, genuine
+                customer endorsements, and more.
+              </p>
+              <a
+                href="https://hernandoabella.github.io/ntf-landing-page/"
+                className="text-blue-500 hover:underline block"
+              >
+                <span>
+                  <i className="fa-regular fa-arrow-up-right-from-square mr-2"></i>
+                </span>
+                Explore
+              </a>{" "}
             </div>
           </div>
           {/* project-card three */}
@@ -77,21 +86,22 @@ const MyWorks: React.FC = () => {
               />
             </div>
             <div className="p-4">
-            <h3 className="text-lg font-semibold mb-2 dark:text-slate-50">
-              CoinBase - Landing Page
-            </h3>
-            <p className="text-slate-400 mb-4">
-              Description of your project. You can mention the technologies
-              used, your role, and any relevant details. Include a link or
-              button for more information.
-            </p>
-            <a
-              href="https://hernandoabella.github.io/coin-base/" className="text-blue-500 hover:underline block">
-              <span>
-                <i className="fa-regular fa-arrow-up-right-from-square mr-2"></i>
-              </span>
-              Explore
-            </a>
+              <h3 className="text-lg font-semibold mb-2 dark:text-slate-50">
+                CoinBase
+              </h3>
+              <p className="text-slate-400 mb-4">
+                An impressive CoinBase landing page CoinBase that adapts
+                seamlessly to different screen sizes.
+              </p>
+              <a
+                href="https://hernandoabella.github.io/coin-base/"
+                className="text-blue-500 hover:underline block"
+              >
+                <span>
+                  <i className="fa-regular fa-arrow-up-right-from-square mr-2"></i>
+                </span>
+                Explore
+              </a>
             </div>
           </div>
         </div>
