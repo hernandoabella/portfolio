@@ -2,19 +2,19 @@ import React from "react";
 
 const WorkExperience: React.FC = () => {
   return (
-    <section className="bg-gray-100 py-10 px-10">
+    <section className="dark:bg-slate-900 py-10 px-10">
       <div className="container mx-auto">
         <h2 className="py-4 text-3xl sm:text-4xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50">
-          Work Experience 💼
+          Work Experience
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div>
-            <div className="relative border-l border-gray-200 dark:border-gray-700">
-              <div className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
-                <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <div className="relative border-l border-gray-400 dark:border-gray-700">
+              <div className="mb-10 ml-4 dark:bg-slate-800 p-4 rounded-lg shadow-lg">
+                <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
                 <h3 className="text-lg font-semibold">Full Stack Developer</h3>
-                <p className="text-gray-600">Smart Design Development</p>
+                <p className="text-slate-600 dark:text-slate-400">Smart Design Development</p>
                 <time className="text-sm mt-4 text-blue-500">
                   September 2020 – October 2022
                 </time>
@@ -43,10 +43,10 @@ const WorkExperience: React.FC = () => {
                   </ul>
                 </div>
               </div>
-              <div className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
-                <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <div className="mb-10 ml-4 dark:bg-slate-800 p-4 rounded-lg shadow-lg">
+                <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
                 <h3 className="text-lg font-semibold">Full Stack Developer</h3>
-                <p className="text-gray-600">General Gaming</p>
+                <p className="text-slate-600 dark:text-slate-400">General Gaming</p>
                 <time className="text-sm mt-4 text-blue-500">
                   May 2016–June 2019
                 </time>
@@ -73,13 +73,13 @@ const WorkExperience: React.FC = () => {
           </div>
 
           <div>
-            <div className="relative border-l border-gray-200 dark:border-gray-700">
-              <div className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
-                <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <div className="relative border-l border-gray-400 dark:border-gray-700">
+              <div className="mb-10 ml-4 dark:bg-slate-800 p-4 rounded-lg shadow-lg">
+                <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
                 <h3 className="text-lg font-semibold">
                   Junior Full Stack Developer
                 </h3>
-                <p className="text-gray-600">Crazy Lazy Apps</p>
+                <p className="text-slate-600 dark:text-slate-400">Crazy Lazy Apps</p>
                 <time className="text-sm mt-4 text-blue-500">
                   December 2012–April 2016
                 </time>
@@ -103,10 +103,10 @@ const WorkExperience: React.FC = () => {
                   </li>
                 </ul>
               </div>
-              <div className="mb-10 ml-4 bg-white p-4 rounded-lg shadow-lg">
-                <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <div className="mb-10 ml-4 dark:bg-slate-800 p-4 rounded-lg shadow-lg">
+                <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900"></div>
                 <h3 className="text-lg font-semibold">Front End Developer</h3>
-                <p className="text-gray-600">Tech Innovators</p>
+                <p className="text-slate-600 dark:text-slate-400">Tech Innovators</p>
                 <time className="text-sm mt-4 text-blue-500">
                   July 2010–March 2012
                 </time>
