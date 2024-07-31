@@ -1,3 +1,3 @@
 # portfolio
 My work
-proyectos & more 
+projects & more 
